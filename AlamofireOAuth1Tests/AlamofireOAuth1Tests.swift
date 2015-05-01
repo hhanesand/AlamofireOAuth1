@@ -27,6 +27,9 @@ class OAuthSpec: QuickSpec {
                 }
             }
             
+            let request = Factual.GetBarcode("BARCODEHERE").URLRequest
+            println(request.URLString)
+            
             describe("OAuth Request Setup") {
                 it("should properly configure an NSURLRequest with OAuth headers") {
                     var request = Alamofire.request(Factual.GetBarcode("barcodeHERE"))

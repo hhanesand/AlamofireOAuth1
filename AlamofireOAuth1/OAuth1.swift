@@ -66,29 +66,44 @@ public enum Factual: URLRequestConvertible {
         var parameters = OAuth.constructOAuthParametersWith(ClientId: Factual.clientId, clientSecret: Factual.clientSecret, tokenId: nil, tokenSecret: nil)
         
         switch self {
-        case .GetBarcode(let barcode):
+            
+        case .GetBarcode(let barcode): //I believe this is the most optimal solution if I still want to use Alamofire's URL.encode code...
             parameters.merge(["q" : barcode])
-            let request = OAuth.process(Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters)).0
+            let request = OAuth.process(Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: parameters)).0 as! NSMutableURLRequest
             
             //we want to build the OAuth signature base string described here http://nouncer.com/oauth/authentication.html
-            
-            let indexOfQueryParameters = request.URLString.rangeOfString("?")!.startIndex
-            
-            let urlString = request.URLString.substringToIndex(indexOfQueryParameters)
-            let queryParameters = request.URLString.substringFromIndex(advance(indexOfQueryParameters, 1)) //exclude ? in string
-            let encodedQueryParameters = queryParameters.stringByAddingPercentEncodingForFormUrlencoded()!
-            
-            let oauthBaseString = "\(Alamofire.Method.GET.rawValue)&\(urlString)&\(encodedQueryParameters)"
-            
-            let oauthRequestKey = "\(Factual.clientSecret)&"
-            
-            let key = oauthRequestKey.cStringUsingEncoding(NSUTF8StringEncoding)
-            let text = oauthBaseString.cStringUsingEncoding(NSUTF8StringEncoding)
-//            let digestLength =
-            
+            let oauthBaseString = calculateOAuthBaseString(Request: request)
+            let oauth_signature = generateOAuthSignatureWithHMACAlgorithmWith(oauthBaseString)
+
+            request.URL = NSURL(string: "\(request.URLString)&oauth_signature=\(oauth_signature)".stringByAddingPercentEncodingForFormUrlencoded()!)
             
             return request
         }
+    }
+    
+    private func calculateOAuthBaseString(Request request: NSMutableURLRequest) -> String {
+        let indexOfQueryParameters = request.URLString.rangeOfString("?")!.startIndex
+        
+        let urlString = request.URLString.substringToIndex(indexOfQueryParameters)
+        let queryParameters = request.URLString.substringFromIndex(advance(indexOfQueryParameters, 1)) //exclude ? in string
+        let encodedQueryParameters = queryParameters.stringByAddingPercentEncodingForFormUrlencoded()!
+        
+        return "\(Alamofire.Method.GET.rawValue)&\(urlString)&\(encodedQueryParameters)"
+    }
+    
+    private func generateOAuthSignatureWithHMACAlgorithmWith(oauthBaseString: String) -> String {
+        let oauthRequestKey = "\(Factual.clientSecret)&"
+        
+        let key = oauthRequestKey.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+        let text = oauthBaseString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+        
+        let oauthSignature = UnsafeMutablePointer<CUnsignedChar>.alloc(Int(CC_SHA1_DIGEST_LENGTH))
+        CCHmac(CCHmacAlgorithm(kCCHmacAlgSHA1), key.bytes, Int(key.length), text.bytes, Int(text.length), oauthSignature)
+        
+        let result = NSData(bytes: oauthSignature, length: Int(CC_SHA1_DIGEST_LENGTH))
+        oauthSignature.destroy()
+        
+        return result.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
     }
 }
 
