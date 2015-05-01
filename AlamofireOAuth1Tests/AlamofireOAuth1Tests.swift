@@ -9,7 +9,6 @@ import Quick
 import Nimble
 import AlamofireOAuth1
 import Alamofire
-import UIKit
 
 class OAuthSpec: QuickSpec {
     override func spec() {
