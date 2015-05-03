@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double AlamofireOAuth1VersionNumber;
 FOUNDATION_EXPORT const unsigned char AlamofireOAuth1VersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AlamofireOAuth1/PublicHeader.h>
-
-
