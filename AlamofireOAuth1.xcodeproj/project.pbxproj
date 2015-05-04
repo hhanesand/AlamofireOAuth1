@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F2C74DC31AF2FA5B0025D6A7 /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C74DC21AF2FA5B0025D6A7 /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2C74DD91AF2FB0D0025D6A7 /* iphoneos.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F2C74DD81AF2FB0D0025D6A7 /* iphoneos.modulemap */; };
-		F2C74DDB1AF2FB4E0025D6A7 /* iphonesimulator.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F2C74DDA1AF2FB4E0025D6A7 /* iphonesimulator.modulemap */; };
-		F2C74DDD1AF2FB720025D6A7 /* macosx.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F2C74DDC1AF2FB720025D6A7 /* macosx.modulemap */; };
 		F2EAEF891AEF30580054F9A9 /* AlamofireOAuth1.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EAEF881AEF30580054F9A9 /* AlamofireOAuth1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2EAEFA01AEF32FD0054F9A9 /* OAuth1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAEF9F1AEF32FD0054F9A9 /* OAuth1.swift */; };
 		F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
@@ -355,9 +352,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C74DDB1AF2FB4E0025D6A7 /* iphonesimulator.modulemap in Sources */,
-				F2C74DD91AF2FB0D0025D6A7 /* iphoneos.modulemap in Sources */,
-				F2C74DDD1AF2FB720025D6A7 /* macosx.modulemap in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +611,7 @@
 				F2C74DD31AF2FA5C0025D6A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2EAEF7D1AEF30580054F9A9 /* Build configuration list for PBXProject "AlamofireOAuth1" */ = {
 			isa = XCConfigurationList;
