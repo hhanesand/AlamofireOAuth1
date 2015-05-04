@@ -21,6 +21,7 @@
 		F2EAEFE51AF0710E0054F9A9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EAEFE61AF0710E0054F9A9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EAEFE71AF0710E0054F9A9 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2F7ACE31AF832D90019E009 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C74DBE1AF2FA5B0025D6A7 /* CommonCrypto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F7ACE31AF832D90019E009 /* CommonCrypto.framework in Frameworks */,
 				F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */,
 				F2EAEFDC1AF06F160054F9A9 /* Nimble.framework in Frameworks */,
 				F2EAEFDD1AF06F190054F9A9 /* Quick.framework in Frameworks */,
