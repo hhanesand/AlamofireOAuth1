@@ -7,18 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F23146A41AF8525C00527B32 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
-		F23146A51AF8525C00527B32 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; };
-		F23146A61AF8525C00527B32 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; };
 		F2C74DC31AF2FA5B0025D6A7 /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C74DC21AF2FA5B0025D6A7 /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2EAEF891AEF30580054F9A9 /* AlamofireOAuth1.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EAEF881AEF30580054F9A9 /* AlamofireOAuth1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2EAEFA01AEF32FD0054F9A9 /* OAuth1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAEF9F1AEF32FD0054F9A9 /* OAuth1.swift */; };
 		F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
-		F2EAEFD11AF06D590054F9A9 /* AlamofireOAuth1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAEFD01AF06D590054F9A9 /* AlamofireOAuth1Tests.swift */; };
-		F2EAEFD21AF06D590054F9A9 /* AlamofireOAuth1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEF831AEF30580054F9A9 /* AlamofireOAuth1.framework */; };
-		F2EAEFE51AF0710E0054F9A9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2EAEFE61AF0710E0054F9A9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F2EAEFE71AF0710E0054F9A9 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2F7ACE31AF832D90019E009 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C74DBE1AF2FA5B0025D6A7 /* CommonCrypto.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,29 +22,7 @@
 			remoteGlobalIDString = F2C74DBD1AF2FA5B0025D6A7;
 			remoteInfo = CommonCrypto;
 		};
-		F2EAEFD31AF06D590054F9A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2EAEF7A1AEF30580054F9A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2EAEF821AEF30580054F9A9;
-			remoteInfo = AlamofireOAuth1;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F2EAEFE41AF071060054F9A9 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				F2EAEFE51AF0710E0054F9A9 /* Nimble.framework in CopyFiles */,
-				F2EAEFE61AF0710E0054F9A9 /* Quick.framework in CopyFiles */,
-				F2EAEFE71AF0710E0054F9A9 /* Alamofire.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F2C74DB61AF2F95B0025D6A7 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
@@ -70,9 +40,6 @@
 		F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F2EAEFA71AF03BC00054F9A9 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		F2EAEFB01AF062C70054F9A9 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		F2EAEFCC1AF06D590054F9A9 /* AlamofireOAuth1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamofireOAuth1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2EAEFCF1AF06D590054F9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2EAEFD01AF06D590054F9A9 /* AlamofireOAuth1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireOAuth1Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,17 +56,6 @@
 			files = (
 				F2F7ACE31AF832D90019E009 /* CommonCrypto.framework in Frameworks */,
 				F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EAEFC91AF06D590054F9A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2EAEFD21AF06D590054F9A9 /* AlamofireOAuth1.framework in Frameworks */,
-				F23146A41AF8525C00527B32 /* Alamofire.framework in Frameworks */,
-				F23146A51AF8525C00527B32 /* Nimble.framework in Frameworks */,
-				F23146A61AF8525C00527B32 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				F2EAEF851AEF30580054F9A9 /* AlamofireOAuth1 */,
-				F2EAEFCD1AF06D590054F9A9 /* AlamofireOAuth1Tests */,
 				F2C74DBF1AF2FA5B0025D6A7 /* CommonCrypto */,
 				F2EAEFA41AEF34AF0054F9A9 /* Frameworks */,
 				F2EAEF841AEF30580054F9A9 /* Products */,
@@ -134,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				F2EAEF831AEF30580054F9A9 /* AlamofireOAuth1.framework */,
-				F2EAEFCC1AF06D590054F9A9 /* AlamofireOAuth1Tests.xctest */,
 				F2C74DBE1AF2FA5B0025D6A7 /* CommonCrypto.framework */,
 			);
 			name = Products;
@@ -167,23 +121,6 @@
 				F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F2EAEFCD1AF06D590054F9A9 /* AlamofireOAuth1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F2EAEFD01AF06D590054F9A9 /* AlamofireOAuth1Tests.swift */,
-				F2EAEFCE1AF06D590054F9A9 /* Supporting Files */,
-			);
-			path = AlamofireOAuth1Tests;
-			sourceTree = "<group>";
-		};
-		F2EAEFCE1AF06D590054F9A9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F2EAEFCF1AF06D590054F9A9 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,25 +183,6 @@
 			productReference = F2EAEF831AEF30580054F9A9 /* AlamofireOAuth1.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F2EAEFCB1AF06D590054F9A9 /* AlamofireOAuth1Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2EAEFD51AF06D590054F9A9 /* Build configuration list for PBXNativeTarget "AlamofireOAuth1Tests" */;
-			buildPhases = (
-				F2EAEFC81AF06D590054F9A9 /* Sources */,
-				F2EAEFC91AF06D590054F9A9 /* Frameworks */,
-				F2EAEFCA1AF06D590054F9A9 /* Resources */,
-				F2EAEFE41AF071060054F9A9 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2EAEFD41AF06D590054F9A9 /* PBXTargetDependency */,
-			);
-			name = AlamofireOAuth1Tests;
-			productName = AlamofireOAuth1Tests;
-			productReference = F2EAEFCC1AF06D590054F9A9 /* AlamofireOAuth1Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,10 +196,6 @@
 						CreatedOnToolsVersion = 6.3.1;
 					};
 					F2EAEF821AEF30580054F9A9 = {
-						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = M7Z4JP773F;
-					};
-					F2EAEFCB1AF06D590054F9A9 = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -299,7 +213,6 @@
 			projectRoot = "";
 			targets = (
 				F2EAEF821AEF30580054F9A9 /* AlamofireOAuth1 */,
-				F2EAEFCB1AF06D590054F9A9 /* AlamofireOAuth1Tests */,
 				F2C74DBD1AF2FA5B0025D6A7 /* CommonCrypto */,
 			);
 		};
@@ -314,13 +227,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2EAEF811AEF30580054F9A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2EAEFCA1AF06D590054F9A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -362,14 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2EAEFC81AF06D590054F9A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2EAEFD11AF06D590054F9A9 /* AlamofireOAuth1Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -377,11 +275,6 @@
 			isa = PBXTargetDependency;
 			target = F2C74DBD1AF2FA5B0025D6A7 /* CommonCrypto */;
 			targetProxy = F2C74DDE1AF2FBB50025D6A7 /* PBXContainerItemProxy */;
-		};
-		F2EAEFD41AF06D590054F9A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2EAEF821AEF30580054F9A9 /* AlamofireOAuth1 */;
-			targetProxy = F2EAEFD31AF06D590054F9A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -568,40 +461,6 @@
 			};
 			name = Release;
 		};
-		F2EAEFD61AF06D590054F9A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AlamofireOAuth1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		F2EAEFD71AF06D590054F9A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = AlamofireOAuth1Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,15 +487,6 @@
 			buildConfigurations = (
 				F2EAEF9A1AEF30580054F9A9 /* Debug */,
 				F2EAEF9B1AEF30580054F9A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2EAEFD51AF06D590054F9A9 /* Build configuration list for PBXNativeTarget "AlamofireOAuth1Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2EAEFD61AF06D590054F9A9 /* Debug */,
-				F2EAEFD71AF06D590054F9A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
