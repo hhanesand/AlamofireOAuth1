@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F23146A41AF8525C00527B32 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
+		F23146A51AF8525C00527B32 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; };
+		F23146A61AF8525C00527B32 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; };
 		F2C74DC31AF2FA5B0025D6A7 /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C74DC21AF2FA5B0025D6A7 /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2EAEF891AEF30580054F9A9 /* AlamofireOAuth1.h in Headers */ = {isa = PBXBuildFile; fileRef = F2EAEF881AEF30580054F9A9 /* AlamofireOAuth1.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2EAEFA01AEF32FD0054F9A9 /* OAuth1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAEF9F1AEF32FD0054F9A9 /* OAuth1.swift */; };
 		F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
 		F2EAEFD11AF06D590054F9A9 /* AlamofireOAuth1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EAEFD01AF06D590054F9A9 /* AlamofireOAuth1Tests.swift */; };
 		F2EAEFD21AF06D590054F9A9 /* AlamofireOAuth1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEF831AEF30580054F9A9 /* AlamofireOAuth1.framework */; };
-		F2EAEFD81AF06D720054F9A9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; };
-		F2EAEFD91AF06D720054F9A9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; };
-		F2EAEFDA1AF06D720054F9A9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; };
-		F2EAEFDC1AF06F160054F9A9 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; };
-		F2EAEFDD1AF06F190054F9A9 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; };
 		F2EAEFE51AF0710E0054F9A9 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFB01AF062C70054F9A9 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EAEFE61AF0710E0054F9A9 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA71AF03BC00054F9A9 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F2EAEFE71AF0710E0054F9A9 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F2EAEFA11AEF342F0054F9A9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -91,8 +89,6 @@
 			files = (
 				F2F7ACE31AF832D90019E009 /* CommonCrypto.framework in Frameworks */,
 				F2EAEFAD1AF03F870054F9A9 /* Alamofire.framework in Frameworks */,
-				F2EAEFDC1AF06F160054F9A9 /* Nimble.framework in Frameworks */,
-				F2EAEFDD1AF06F190054F9A9 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +97,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2EAEFD21AF06D590054F9A9 /* AlamofireOAuth1.framework in Frameworks */,
-				F2EAEFD81AF06D720054F9A9 /* Nimble.framework in Frameworks */,
-				F2EAEFD91AF06D720054F9A9 /* Quick.framework in Frameworks */,
-				F2EAEFDA1AF06D720054F9A9 /* Alamofire.framework in Frameworks */,
+				F23146A41AF8525C00527B32 /* Alamofire.framework in Frameworks */,
+				F23146A51AF8525C00527B32 /* Nimble.framework in Frameworks */,
+				F23146A61AF8525C00527B32 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +234,7 @@
 				F2EAEF7F1AEF30580054F9A9 /* Frameworks */,
 				F2EAEF801AEF30580054F9A9 /* Headers */,
 				F2EAEF811AEF30580054F9A9 /* Resources */,
-				F2EAEFA31AEF34400054F9A9 /* ShellScript */,
+				F23146A81AF8527600527B32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,6 +279,7 @@
 					};
 					F2EAEF821AEF30580054F9A9 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = M7Z4JP773F;
 					};
 					F2EAEFCB1AF06D590054F9A9 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -333,7 +330,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		F2EAEFA31AEF34400054F9A9 /* ShellScript */ = {
+		F23146A81AF8527600527B32 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -524,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -549,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
